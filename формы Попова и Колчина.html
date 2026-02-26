@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета кандидата</title>
+    
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: white;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+    h1 {
+        text-align: center;
+        color: black;
+        margin-bottom: 25px;
+        font-size: 24px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid black;
+    }
+    th {
+        width: 40%;
+        font-weight: bold;
+    }
+    td {
+        width: 60%;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    .button-group {
+        text-align: center;
+        margin-top: 20px;
+    }
+    button {
+        background-color: white;
+        color: black;
+        padding: 10px 20px;
+        border: 1px solid black;
+        cursor: pointer;
+        margin: 5px;
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+        width: 120px; 
+    }
+</style>
+
+</head>
+<body>
+<div class="container">
+<h1>Анкета кандидата</h1>
+<form action="#" method="post">
+
+<table>
+<tbody>
+<tr>
+
+<th>1. Фамилия</th>
+<td><input type="text" name="surname" required></td>
+</tr>
+<tr>
+
+<th>2. Имя</th>
+<td><input type="text" name="name" required></td>
+</tr>
+<tr>
+
+<th>3. Отчество</th>
+<td><input type="text" name="patronymic"></td>
+</tr>
+<tr>
+
+<th>4. Должность</th>
+<td><input type="text" name="position" required></td>
+</tr>
+<tr>
+
+<th>5. Рабочий адрес</th>
+<td><input type="text" name="work_address" required></td>
+</tr>
+<tr>
+
+<th>6. Рабочий телефон</th>
+<td><input type="tel" name="work_phone" required></td>
+</tr>
+<tr>
+
+<th>7. E‑mail адрес</th>
+<td><input type="email" name="email" required></td>
+</tr>
+
+</tbody>
+</table>
+
+<div class="button-group">
+<button type="submit">Отправить анкету</button>
+<button type="reset">Очистить форму</button>
+</div>
+
+</form>
+</div>
+</body>
+</html>
